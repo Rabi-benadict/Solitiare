@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="source/thanos.jpeg">
+    <title>Solitiare</title>
+    <link href="sol.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/30c230f0f9.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="solBody">
+    <section id="mainContainer">
+        <div id="topCont">
+            <div id="stockCont">
+                <div id="stock" onclick="transfer()"></div>
+                <div id="stockRevealer"></div>
+            </div>
+            <!-- <button onclick="arrange()">arrange</button> -->
+            <div id="ansCont">
+                <div id="deckForSpade" style="background-image: url(source/spade.jpg);" class="ans">Spade</div>
+                <div id="deckForClub" style="background-image: url(source/club.jpg);" class="ans">Clubs</div>
+                <div id="deckForHeart" style="background-image: url(source/heart.jpg);" class="ans">Hearts</div>
+                <div id="deckForDiamond" style="background-image: url(source/diamond.jpg);" class="ans">Diamonds</div>
+            </div>
+        </div>
+        <div id="bottomCont">
+            <div class="sortingTable" id="table1" ></div>
+            <div class="sortingTable" id="table2"></div>
+            <div class="sortingTable" id="table3"></div>
+            <div class="sortingTable" id="table4"></div>
+            <div class="sortingTable" id="table5"></div>
+            <div class="sortingTable" id="table6"></div>
+            <div class="sortingTable" id="table7"></div>
+        </div>
+        <!-- <div>
+            <img id="home" src="source/home2.png" />
+        </div> -->
+        <div id="icons-holder">
+            <div id="shuffleCont" class="iconss">
+                <i id="shuffle" class="fa-solid fa-rotate"></i>
+                <p>Shuffle</p>
+            </div>
+            <div class="iconss">
+                <i id="home" onclick="goToHome()" class="fa-solid fa-house"></i>
+                <p class="homeTxt">Home</p>
+            </div>
+        </div>
+    </section>
+    <section id="pass" class="dispNone">
+        <img src="source/passed.svg" class="fa-beat" />
+        <audio src="source/GTA Mission Passed audio.mp3"></audio>
+    </section>
+    <section id="winTxt" class="dispNone">
+        <h1 class="fa-beat">You Win</h1>
+        <div id="iconCont" class="dispNone">
+            <i id="icon" onclick="goToHome()" class="fa-solid fa-house"></i>
+            <i id="icon2" onclick="retry()" class="fa-solid fa-rotate"></i>
+        </div>
+        <audio src="source/GTA Mission Passed audio.mp3" loop></audio>
+    </section>
+
+
+    <script src="sol.js"></script>
+</body>
+
+</html>

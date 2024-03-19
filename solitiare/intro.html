@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solitiare</title>
+    <link rel="shortcut icon" type="x-icon" href="source/thanos.jpeg">
+    <link href="sol.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/30c230f0f9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section id="interface">
+        <div id="banner">
+            <img src="source/new/fourcards.png" />
+            <h1>Solitaire</h1>
+        </div>
+        <div id="btns">
+            <i id="btn1" onclick="goToPlay()" class="fa-solid fa-heart" style="color: #d40000;"></i>
+            <i id="btnForInstructions" style="color: #fdfdfd;" class="fa-solid fa-circle-question"
+                onclick='toggleNone()'></i>
+        </div>
+    </section>
+    <div id="instructionBox" class="dispNone" onclick="toggleNone()">
+        <div id="htp">
+            <h2>Objective:</h2>
+            <p>The goal is to build four foundation piles, one for each suit (hearts, diamonds, clubs, and spades).
+                Youmust build these piles from Ace to King.</p>
+            <h2>Setup:</h2>
+            <li>The game begins with the cards shuffled and dealt into seven tableau columns.</li>
+            <li>The first column contains one card, the second column contains two cards, and so on, until the
+                seventh column contains seven cards.</li>
+            <li>The top card in each tableau column is face-up, and the remaining cards are face-down.</li>
+            <h2>Gameplay:</h2>
+            <li>Cards in the tableau columns can be moved onto other cards of the opposite color and one rank
+                higher. For example, you can move a red 5 onto a black 6.</li>
+            <li>A sequence of cards can also be moved together as a group if they are in descending order and of the
+                same suit. For example, you can move a red Queen onto a black King along with any other cards in
+                descending order (e.g., black Jack, red 10).</li>
+            <li>Empty tableau columns can be filled with any card or group of cards.</li>
+            <li>Cards from the stock pile can be dealt onto the tableau columns one at a time.</li>
+            <li>Once all cards have been moved to the foundation piles in ascending order and sorted by suit, the
+                game is won.</li>
+            <h2>Controls:</h2>
+            <li>Click and drag cards to move them.</li>
+            <li>Click on the deck to deal new cards onto the tableau.</li>
+            <li>Restart the game at any time by clicking the restart button.</li>
+            <br>
+            <hr>
+            <h2 style="text-align: center;">Enjoy Your Game!</h2>
+            <p style="text-align: center;">That's all you need to know to start playing Solitaire. Have fun and good
+                luck!</p>
+            <hr>
+        </div>
+    </div>
+    <script src="sol.js"></script>
+</body>
+
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sol.css" type="text/css">
+    <title>Solitiare</title>
+</head>
+<body>
+    <section id="land">
+        <img src="source/SOLITAIRE_banner.png" />
+        <a class="introButton" href="sol.html" onclick="createCard()">Start game</a>
+        <a class="introButton">Rules</a>
+    </section>
+</body>
+</html> -->
